@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import ReactAnimationExample from './components/ReactAnimationExample';
+import TransitionExample from './components/TransitionExample';
 
 const TITLES = ['Learn React', 'Learn Vue', 'Learn Preact', 'Learn Angular'];
 class App extends Component {
@@ -42,6 +43,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             <ReactAnimationExample title={TITLES[titleIdx]} />
+            <TransitionExample data={TITLES} currentTitle={TITLES[titleIdx]} />
           </a>
         </header>
       </div>
